@@ -1,0 +1,31 @@
+Pemmican
+
+<item id="XXXX" name="Pemmican">
+	<property name="Meshfile" value="Items/Food/can_empty" />
+	<property name="Material" value="metal" />
+	<property name="Weight" value="5" />
+	<property name="HoldType" value="14" />
+	<property name="Stacknumber" value="50" /> <!-- STK food -->
+	<property class="Action1">
+		<property name="Class" value="Eat" />
+		<property name="Delay" value="2.1" />
+		<property name="Use_time" value="..." />
+		<property name="Gain_health" value="5" />
+		<property name="Gain_food" value="25" />
+		<property name="Gain_water" value="-5" />
+		<property name="Gain_wellness" value="1" />
+		<property name="Sound_start" value="UseActions/player_eating" />
+	</property>
+	<property name="Group" value="Food/Cooking" />
+</item>
+
+<recipe name="Pemmican" count="3" scrapable="False" craft_area="campfire">
+	<ingredient name="blueberries" count="1"/>
+	<ingredient name="canEmpty" count="1"/>
+	<ingredient name="rawMeat" count="3"/>	
+	<ingredient name="animalFat" count="3"/>
+</recipe>
+
+Text - Item: Pemmican (or some varient) was used by many hunter / gatherer societies.  It was the perfect survival food, packing plenty of protein and calories into a food that was easy to make, easy to carry and would not spoil for months or years.
+
+Text - Recipe: Dry three pieces of lean meat over your campfire, while your berries dry on a stone (or use the tin can).  When these items are dry, grind them into powder / very small pieces.  Render your animal fat in the tin can.  Mix your dry, powdered meat and berries into the liquid tallow, and allow to cool.
